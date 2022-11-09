@@ -14,7 +14,9 @@ public class AnimalsCage {
 
     @Autowired
     private Timer timer;
-
+    public Timer getTimer() {
+        return timer;
+    }
 
 
     public void whatAnimalSay() {
@@ -23,9 +25,5 @@ public class AnimalsCage {
         System.out.println("At:");
         System.out.println(timer.getTime());
         System.out.println("________________________");
-    }
-
-    public Timer getTimer() {
-        return timer;
     }
 }
